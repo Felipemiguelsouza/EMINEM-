@@ -1,0 +1,175 @@
+/* ===== Fontes ===== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* ===== Variáveis ===== */
+:root {
+    --vermelho-eminem: #c70000;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ff7b00;
+}
+
+/* ===== Corpo ===== */
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+    background-color: #ffffff;
+}
+
+/* ===== Seções ===== */
+section {
+    padding: 5rem 1rem;
+}
+
+/* ===== Navegação ===== */
+.nav-link {
+    color: var(--vermelho-eminem);
+    font-weight: 600;
+}
+
+/* ===== Seção inicial ===== */
+.inicio-fundo {
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.img-inicio {
+    width: 100%;
+    max-width: 35rem;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.botao-inicio {
+    background-color: var(--vermelho-eminem);
+    border-radius: 30px;
+    border: none;
+    padding: 0.8rem 2rem; /* Ajuste de tamanho interno */
+    font-family: 'Lobster', cursive;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block; /* Evita que o botão ocupe toda a linha */
+    text-align: center; /* Centraliza o texto */
+}
+
+.display-4 {
+    font-family: 'Lobster', cursive;
+    text-shadow: -3px 3px var(--vermelho-eminem);
+}
+
+/* ===== Seção Eminem ===== */
+#eminem {
+    position: relative;
+    padding-top: 5rem;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#eminem h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    color: var(--vermelho-eminem);
+}
+
+.titulo-lobster {
+    font-family: 'Lobster', cursive;
+    color: var(--vermelho-eminem);
+    font-size: 2.5rem;
+}
+
+/* Imagem Eminem */
+#eminem img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+/* ===== Galeria ===== */
+#galeria {
+    background-color: #FAF4F4;
+    padding: 3rem 1rem;
+}
+
+.fundo-galeria {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Imagens da galeria */
+.fundo-galeria img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* ===== Formulário ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* ===== Alto contraste ===== */
+body.alto-contraste {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+body.alto-contraste a {
+    color: var(--alto-contraste-link);
+}
+
+/* ===== Responsividade ===== */
+@media (min-width: 768px) {
+    #eminem {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .esquerda-conteudo {
+        align-items: flex-start;
+        text-align: left;
+    }
+}

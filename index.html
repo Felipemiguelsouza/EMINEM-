@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eminem - Universo Acessível</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Lobster&display=swap');
+
+        :root {
+            --vermelho-eminem: #c70000;
+            --alto-contraste-fundo: #000000;
+            --alto-contraste-texto: #ffffff;
+            --alto-contraste-link: #ff7b00;
+        }
+
+        body {
+            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fff;
+        }
+
+        .nav-link {
+            color: var(--vermelho-eminem);
+            font-weight: 600;
+        }
+
+        section {
+            padding: 5rem 1rem;
+        }
+
+        /* Seção Inicial */
+        .inicio-fundo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            padding: 3rem 1rem;
+        }
+
+        .esquerda-conteudo {
+            text-align: center;
+        }
+
+        .botao-container {
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .botao-inicio {
+            background-color: var(--vermelho-eminem);
+            border-radius: 30px;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-family: 'Lobster', cursive;
+            font-size: 1.1rem;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .img-inicio {
+            max-width: 35rem;
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .display-4 {
+            font-family: 'Lobster', cursive;
+            text-shadow: -3px 3px var(--vermelho-eminem);
+        }
+
+        /* Seção Eminem */
+        #eminem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            text-align: center;
+        }
+
+        #eminem img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 20px;
+        }
+
+        #eminem h2 {
+            font-family: 'Lobster', cursive;
+            color: var(--vermelho-eminem);
+            font-size: 2.5rem;
+        }
+
+        /* Galeria */
+        #galeria {
+            background-color: #FAF4F4;
+        }
+
+        .fundo-galeria {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .fundo-galeria img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+
+        /* Formulário */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input,
+        textarea {
+            padding: 0.8rem;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        /* Alto contraste */
+        body.alto-contraste {
+            background-color: var(--alto-contraste-fundo);
+            color: var(--alto-contraste-texto);
+        }
+
+        body.alto-contraste a {
+            color: var(--alto-contraste-link);
+        }
+
+        @media (min-width: 768px) {
+            #eminem {
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            .esquerda-conteudo {
+                align-items: flex-start;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="p-3">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/images.png" alt="Logo Eminem" loading="lazy" style="max-width:120px;">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Inicial -->
+    <section id="inicio" class="inicio-fundo">
+        <div class="esquerda-conteudo">
+            <h1 class="display-4">Bem-vindo ao Universo Eminem</h1>
+            <div class="botao-container">
+                <a href="#eminem" class="botao-inicio">Quero conhecer!</a>
+            </div>
+        </div>
+        <img src="img/eminem-completa-43-anos.jpg" alt="Eminem sorrindo" class="img-inicio">
+    </section>
+
+    <!-- Seção Eminem -->
+    <section id="eminem" tabindex="0" aria-label="Seção sobre Eminem">
+        <div>
+            <h2>Quem é Eminem?</h2>
+            <p>Eminem, nascido Marshall Bruce Mathers III, é um rapper, compositor e produtor norte-americano considerado um dos maiores nomes da história do hip hop. Conhecido por suas letras intensas e estilo inconfundível, ganhou destaque mundial nos anos 90 e continua sendo uma das figuras mais influentes da música até hoje.</p>
+            <img src="img/images (2).png" alt="Retrato de Eminem">
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" tabindex="0" aria-label="Galeria de imagens">
+        <h2 class="text-center mb-4 titulo-lobster">Galeria</h2>
+        <div class="fundo-galeria">
+            <img src="img/maxresdefault-1.jpg" alt="Eminem em show">
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="p-5">
+        <div class="container col-md-8 col-lg-6">
+            <h2 class="mb-3 text-center">Entre em Contato</h2>
+            <form>
+                <input type="text" name="nome" placeholder="Digite seu nome completo" required>
+                <input type="email" name="email" placeholder="Digite seu email" required>
+                <textarea name="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+                <div class="botao-container">
+                    <button type="submit" class="botao-inicio">Enviar Mensagem</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <a href="https://wa.me/seunumerowhatsapp" target="_blank" aria-label="Whatsapp"><i class="bi bi-whatsapp fs-3 mx-2"></i></a>
+        <a href="https://instagram.com/seuperfil" target="_blank" aria-label="Instagram"><i class="bi bi-instagram fs-3 mx-2"></i></a>
+        <a href="https://tiktok.com/@seuperfil" target="_blank" aria-label="TikTok"><i class="bi bi-tiktok fs-3 mx-2"></i></a>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+</body>
+
+</html>
